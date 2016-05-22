@@ -1,0 +1,48 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.green-red.min.css">
+	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body onload="mainFunction()">
+	<div align="center">
+		<button onClick="location.reload()" id="close" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+			<i class="material-icons">close</i>
+		</button>
+		<button onClick="pop()" id="pause" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+			<i class="material-icons">pause</i>
+		</button>
+		<h2 id="number"></h2>
+		<h4 id="analysis"></h4>
+		<form id="menu">
+			<h1>3 to 1</h1>
+			<h5>Enter the amount of time you have to work and the timer will tell you when to take a break.</h5>
+			<br/>
+			<br/>
+			<div class="mdl-textfield mdl-js-textfield">
+				<input class="mdl-textfield__input" type="number" id="hour">
+				<label class="mdl-textfield__label" for="hour">Hour(s)</label>
+				<span class="mdl-textfield__error">Input is not a number!</span>
+			</div>
+			<div class="mdl-textfield mdl-js-textfield">
+				<input class="mdl-textfield__input" type="number" id="min">
+				<label class="mdl-textfield__label" for="min">Minute(s)</label>
+				<span class="mdl-textfield__error">Input is not a number!</span>
+			</div>
+			<br>
+			<button id="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="button">
+				BE PRODUCTIVE!
+			</button>
+		</form>
+		<h4 id="clock"></h4>
+		<h4 id="message"></h4>
+
+	</div>
+</body>
+
+</html>

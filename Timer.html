@@ -1,0 +1,65 @@
+<html>
+
+<body>
+
+    <form>
+<p>Enter the hour:</p>
+
+            <select>
+
+               <option>(select one)</option>
+    <option>0</option>
+               <option>1</option>
+                <option>2</option>
+                <option>
+                3</option>
+                <option>4</option>
+                <option>5</option>
+    }
+                </select>
+    <p>Enter the minutes:</p>
+
+            <select>
+
+               <option>(select one)</option>
+                <option>00</option>
+               <option>05</option>
+                <option>10</option>
+                <option>
+                15</option>
+                <option>20</option>
+                <option>25</option>
+                 <option>30</option>
+               <option>35</option>
+                <option>40</option>
+                <option>45</option>
+                <option>50</option>
+                <option>55</option>
+                <option>60</option>
+                </select>
+    </form>
+
+    <button onclick = "storeValues(form)">Submit</button>
+
+
+
+<script>
+
+    function setCookie(name, value)
+  {
+    document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
+  }
+      function storeValues(form) {
+    setCookie("field1", form.field1.value);
+    setCookie("field2", form.field2.value);
+    setCookie("field3", form.field3.value);
+    setCookie("field4", form.field4.value);
+    return true;
+  }
+
+
+
+</script>
+
+</body>
+</html>
